@@ -124,3 +124,75 @@
 | paper_023.md | Forsberg et al. | 2023 | RCT (largest to date) | BMC Medicine | Null frequentist results; Cohen's d=0.09-0.17 |
 | paper_024.md | Forbes et al. | 2023 | RCT (dose-response, n=30) | Brain Sciences | Null results at 10g/d and 20g/d in young adults |
 | paper_025.md | Gordjinejad et al. | 2024 | RCT (single dose + MRS) | Scientific Reports | Positive during sleep deprivation; 31P-MRS mechanism |
+
+---
+
+## Search: 2026-03-02T03:33 — Cluster D, Query 1
+- **Cluster:** D (Semantic Scholar + CrossRef)
+- **Query:** "creatine supplementation cognitive performance healthy adults"
+- **API/Tool:** Semantic Scholar API (attempted, HTTP 403) → WebSearch (fallback)
+- **Results Found:** 10 (WebSearch)
+- **Papers Saved:** paper_060.md (Avgerinos et al. 2018 — systematic review of RCTs in healthy individuals)
+- **Duplicates Skipped:** 3 (Xu et al. 2024 already in paper_001/020, Forbes/Prokopidis et al. 2023 meta-analysis already captured, Marshall et al. 2025 aging review noted)
+- **Notes:** Semantic Scholar API returned 403 (api.semanticscholar.org blocked by egress proxy). CrossRef API also unreachable. Fell back to WebSearch. Identified Xu et al. 2024 Frontiers meta-analysis (16 RCTs, n=492) with key finding: creatine improved memory (SMD=0.31) and attention but not executive function. Forbes et al. 2023 memory meta-analysis (10 RCTs) found SMD=0.29, driven by older adults (66-76 yrs). EFSA 2024 evaluation found insufficient evidence to support health claim.
+
+## Search: 2026-03-02T03:33 — Cluster D, Query 2
+- **Cluster:** D (Semantic Scholar + CrossRef)
+- **Query:** "creatine brain energy metabolism cognition"
+- **API/Tool:** Semantic Scholar API (attempted, HTTP 403) → WebSearch (fallback)
+- **Results Found:** 10 (WebSearch)
+- **Papers Saved:** paper_061.md (Forbes et al. 2023 — "Heads Up" narrative review on creatine and brain health), paper_062.md (Gordji-Nejad et al. 2024 — single dose creatine and sleep deprivation)
+- **Duplicates Skipped:** 4 (Avgerinos et al. 2018 already in paper_060, Xu et al. 2024 already in paper_001/020, Prokopidis et al. meta-analysis already tracked)
+- **Notes:** Rich mechanistic data retrieved on CK-PCr system. Key finding: ATP synthesis from PCr is 12x faster than oxidative phosphorylation and 70x faster than de novo pathways. Creatine acts as neuromodulator with evidence of synaptic vesicle storage and action-potential-dependent release.
+
+## Search: 2026-03-02T03:33 — Cluster D, Query 3
+- **Cluster:** D (Semantic Scholar + CrossRef)
+- **Query:** "mechanism of creatine on brain bioenergetics phosphocreatine ATP cognition"
+- **API/Tool:** Semantic Scholar API (attempted, HTTP 403) → WebSearch (fallback)
+- **Results Found:** 10 (WebSearch)
+- **Papers Saved:** paper_063.md (Prokopidis et al. 2022 — Effects of Creatine Supplementation on Brain Function and Health)
+- **Duplicates Skipped:** 5 (Avgerinos et al. 2018, Xu et al. 2024, Forbes et al. 2023, Gordji-Nejad et al. 2024 all already captured)
+- **Notes:** Identified creatine's neuroprotective mechanisms: oxidative stress modulation, antioxidant actions, NMDA receptor interaction, Na+-K+-ATPase interaction, GABAA receptor interaction. PCr regenerates ATP 40x faster than oxidative phosphorylation. Muscle-brain axis and BDNF signaling pathway identified. Creatine kinase dysfunction observed in Alzheimer's disease.
+
+## Search: 2026-03-02T03:33 — Cluster D, Query 4
+- **Cluster:** D (Semantic Scholar + CrossRef)
+- **Query:** "creatine transport across blood-brain barrier brain creatine uptake"
+- **API/Tool:** Semantic Scholar API (attempted, HTTP 403) → WebSearch (fallback)
+- **Results Found:** 10 (WebSearch)
+- **Papers Saved:** paper_065.md (Beard & Braissant 2010 — Synthesis and transport of creatine in the CNS)
+- **Duplicates Skipped:** 2 (Braissant 2012 related but different focus, other duplicates from prior queries)
+- **Notes:** Key finding: SLC6A8 is expressed on BBB endothelial cells but NOT on astrocytic endfeet, severely limiting peripheral creatine uptake. Transport rate: ~1,190 creatine molecules/min/transporter at 5 uM. CTD (creatine transporter deficiency) from SLC6A8 mutations leads to undetectable brain creatine and severe intellectual disability. Cyclocreatine identified as potential therapeutic candidate for CTD.
+
+## Search: 2026-03-02T03:33 — Cluster D, Query 5
+- **Cluster:** D (Semantic Scholar + CrossRef)
+- **Query:** "creatine supplementation cognitive testing dosing protocol duration brain study design"
+- **API/Tool:** Semantic Scholar API (attempted, HTTP 403) → WebSearch (fallback)
+- **Results Found:** 10 (WebSearch)
+- **Papers Saved:** paper_064.md (Sandkuhler et al. 2023 — randomised controlled crossover study, BMC Medicine)
+- **Duplicates Skipped:** 4 (Xu et al. 2024, Gordji-Nejad et al. 2024, others already captured)
+- **Notes:** Dosing protocols across studies range from 5-20 g/day for 5 days to 24 weeks. Key design insight: 10 g/day recommended for cognitive benefit due to limited BBB transport. Dose-response study (MDPI Brain Sciences 2023) found 10g and 20g/day for 6 weeks did NOT improve cognition in young adults, suggesting higher/longer dosing or stressed conditions may be needed. CrM 10g/day + GAA 2g/day combination showed promise. RAPM, BDS, fNIRS used as cognitive measures.
+
+---
+
+## Cluster D API Access Issues
+- **Semantic Scholar API:** Returned HTTP 403 — blocked by egress proxy (api.semanticscholar.org not in allowed hosts)
+- **CrossRef API:** Also blocked by proxy (api.crossref.org not in allowed hosts)
+- **Fallback strategy:** Used WebSearch with targeted academic queries to find papers that would have been discovered via Semantic Scholar and CrossRef
+- **Citation count data:** Estimated from WebSearch context and known citation databases; exact counts unavailable without API access
+
+## Summary — Cluster D Search Activity
+- **Total queries executed:** 5
+- **Total unique papers saved:** 6 (paper_060.md through paper_065.md)
+- **Total duplicates detected and skipped:** ~18 across all 5 queries
+- **Full texts retrieved:** 0 (WebFetch returned 403 on all academic publisher URLs)
+- **Papers span:** 2010-2024, covering foundational reviews, mechanistic reviews, empirical studies, and BBB transport
+
+### Papers Saved — Cluster D
+| File | Authors | Year | Type | Journal | Key Finding |
+|------|---------|------|------|---------|-------------|
+| paper_060.md | Avgerinos et al. | 2018 | Systematic review (6 RCTs, n=281) | Experimental Gerontology | Short-term memory + reasoning improved in healthy individuals |
+| paper_061.md | Forbes et al. | 2023 | Narrative review | Nutrients | Comprehensive brain health review; neuroprotection + cognition |
+| paper_062.md | Gordji-Nejad et al. | 2024 | RCT (single dose + MRS) | Scientific Reports | 16-29% processing speed improvement during sleep deprivation |
+| paper_063.md | Prokopidis et al. | 2022 | Review | Nutrients | Brain bioenergetics mechanisms; neuroprotective pathways |
+| paper_064.md | Sandkuhler et al. | 2023 | RCT (crossover) | BMC Medicine | Rigorous 5g/day x 6 weeks crossover design; dosing protocol data |
+| paper_065.md | Beard & Braissant | 2010 | Review | J Neurochemistry | BBB creatine transport via SLC6A8; endogenous CNS synthesis |
