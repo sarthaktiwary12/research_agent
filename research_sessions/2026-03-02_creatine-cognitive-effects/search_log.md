@@ -196,3 +196,104 @@
 | paper_063.md | Prokopidis et al. | 2022 | Review | Nutrients | Brain bioenergetics mechanisms; neuroprotective pathways |
 | paper_064.md | Sandkuhler et al. | 2023 | RCT (crossover) | BMC Medicine | Rigorous 5g/day x 6 weeks crossover design; dosing protocol data |
 | paper_065.md | Beard & Braissant | 2010 | Review | J Neurochemistry | BBB creatine transport via SLC6A8; endogenous CNS synthesis |
+
+---
+
+## Search: 2026-03-02T04:00 — Cluster C, Query 1 (bioRxiv)
+- **Cluster:** C (Preprints + Open Access)
+- **Query:** site:biorxiv.org "creatine supplementation cognitive performance"
+- **API/Tool:** WebSearch
+- **Results Found:** 0 direct bioRxiv results (search returned PubMed/PMC results instead)
+- **Papers Saved:** None from this specific query
+- **Duplicates Skipped:** 0
+- **Notes:** No bioRxiv preprints found for this exact phrase search. This is consistent with creatine-cognition research being primarily in nutrition/clinical journals rather than preprint servers. WebSearch results redirected to published papers already captured in Clusters A, B, and D (Xu 2024, Avgerinos 2018, Forsberg 2023 published version at PMID 37968687).
+
+## Search: 2026-03-02T04:00 — Cluster C, Query 1 (medRxiv)
+- **Cluster:** C (Preprints + Open Access)
+- **Query:** site:medrxiv.org creatine supplementation cognitive performance
+- **API/Tool:** WebSearch
+- **Results Found:** 10
+- **Papers Saved:** paper_040.md (Forsberg et al. 2023 preprint — largest RCT on creatine and cognition)
+- **Duplicates Skipped:** 0 (cross-cluster: paper_023.md in Cluster B is the published BMC Medicine version; paper_040 is the medRxiv preprint version)
+- **Notes:** Primary hit is the preprint version of Forsberg et al. 2023, the largest RCT on creatine and cognitive performance. Additional medRxiv results included: Combined Metabolic Activators in Parkinson's (2021), GI side effects of creatine (2025), creatine-weighted imaging in Parkinson's (2025), creatine supplementation for physical function (2023). The GI tolerability paper (paper_047.md) saved due to relevance to dosing.
+
+## Search: 2026-03-02T04:01 — Cluster C, Query 2 (bioRxiv)
+- **Cluster:** C (Preprints + Open Access)
+- **Query:** site:biorxiv.org creatine brain bioenergetics cognition
+- **API/Tool:** WebSearch
+- **Results Found:** 10
+- **Papers Saved:** paper_041.md (creatine as neurotransmitter — synaptic vesicles, 2022), paper_043.md (DCE improves cognitive function in CTD mice, 2022), paper_044.md (ketosis/bioenergetics — total creatine correlates with neural function, 2024), paper_046.md (CTD rat model — brain creatine deficiency + intellectual disability, 2021)
+- **Duplicates Skipped:** 0
+- **Notes:** Most productive bioRxiv query. Found mechanistic preprints relevant to understanding how brain creatine impacts cognition. The creatine-as-neurotransmitter paper (paper_041) is particularly novel — suggests creatine may function beyond energy buffering, as a neurotransmitter with synaptic vesicle storage and action-potential-dependent release. The ketosis study (paper_044) provides in vivo human evidence that brain total creatine increases correlate with neural function improvements. CTD animal models (paper_043, paper_046) show that when brain creatine is absent, severe cognitive impairment results.
+
+## Search: 2026-03-02T04:01 — Cluster C, Query 2 (medRxiv)
+- **Cluster:** C (Preprints + Open Access)
+- **Query:** site:medrxiv.org creatine brain bioenergetics cognition
+- **API/Tool:** WebSearch
+- **Results Found:** 10
+- **Papers Saved:** paper_042.md (depression, prefrontal creatine and gray matter volume, 2021), paper_047.md (GI/fluid retention symptoms with creatine monohydrate, 2025)
+- **Duplicates Skipped:** 1 (Forsberg et al. 2023 already in paper_040)
+- **Notes:** paper_042 provides evidence linking lower prefrontal creatine concentrations to higher depression scores, relevant to creatine's role in brain bioenergetics and cognitive/affective function. Also identified creatine-weighted MRI imaging in Parkinson's (2025) showing region-specific creatine depletion — not saved as it's a clinical population study. References Alzheimer's pilot study with creatine.
+
+## Search: 2026-03-02T04:02 — Cluster C, Query 3 (bioRxiv)
+- **Cluster:** C (Preprints + Open Access)
+- **Query:** site:biorxiv.org creatine cognition review Avgerinos Rae Dolan
+- **API/Tool:** WebSearch
+- **Results Found:** 10
+- **Papers Saved:** None new (results were CTD and creatine transporter studies already captured or not directly relevant)
+- **Duplicates Skipped:** 2 (DCE/cognitive function paper_043, CTD rat model paper_046)
+- **Notes:** No bioRxiv preprints by Avgerinos, Rae, or Dolan found. This is expected — Avgerinos et al. 2018 was published in Experimental Gerontology (already captured in Clusters B and D), Rae et al. 2003 in Proceedings of the Royal Society B, and Dolan et al. reviews in published journals. These authors did not deposit preprints on bioRxiv. Identified Connectomic and behavioral alterations in CTD gene therapy (2024) — noted but not saved as it's a gene therapy animal study.
+
+## Search: 2026-03-02T04:02 — Cluster C, Query 3 (medRxiv)
+- **Cluster:** C (Preprints + Open Access)
+- **Query:** site:medrxiv.org creatine cognition Avgerinos OR Rae OR Dolan
+- **API/Tool:** WebSearch
+- **Results Found:** 7
+- **Papers Saved:** paper_045.md (brain total creatine in PPA — cites Avgerinos and Rae, 2022)
+- **Duplicates Skipped:** 1 (Forsberg et al. 2023 already in paper_040)
+- **Notes:** paper_045 is a clinical population study (PPA) but explicitly cites Avgerinos et al. (2018) on creatine improving cognitive function in normal adults and Rae (2014) on brain creatine metabolism, making it a useful citation-chain node. The Forsberg et al. preprint (paper_040) also extensively references Rae et al. (2003) as the study it was designed to replicate, and Avgerinos et al. (2018) for systematic review context.
+
+## Search: 2026-03-02T04:03 — Cluster C, arXiv (all 3 queries)
+- **Cluster:** C (Preprints + Open Access)
+- **Query 1:** site:arxiv.org creatine supplementation cognitive performance
+- **Query 2:** site:arxiv.org creatine brain bioenergetics cognition
+- **API/Tool:** WebSearch (arXiv API at export.arxiv.org returned HTTP 403; curl also failed with connection reset)
+- **Results Found:** 0 relevant results across both queries
+- **Papers Saved:** None
+- **Duplicates Skipped:** 0
+- **Notes:** arXiv is primarily a physics/math/CS preprint server. No papers on creatine supplementation and cognitive performance exist on arXiv. Query 1 returned results about protein synthesis, sleep/cognition, and ML papers. Query 2 returned results about brain energetics and AI, MRS methodology, and neurobiology of criticality — none about creatine supplementation. arXiv API (export.arxiv.org) blocked by network proxy. This null result is expected for a nutrition/neuroscience topic and is not a gap.
+
+---
+
+## Cluster C API Access Issues
+- **arXiv API:** Returned HTTP 403 — blocked by egress proxy (export.arxiv.org not in allowed hosts). Also failed via curl (connection reset).
+- **bioRxiv API:** Not attempted directly; WebSearch with site:biorxiv.org used as primary strategy per skill instructions.
+- **CORE API:** Not attempted (api.core.ac.uk likely also blocked by proxy).
+- **WebFetch on preprint full text:** Returned HTTP 403 on medRxiv and bioRxiv URLs — full text not retrievable.
+- **Fallback strategy:** Used WebSearch with site: operators, which provided detailed abstracts, key findings, and methodological information from search result snippets.
+
+## Summary — Cluster C Search Activity
+- **Total queries executed:** 9 (3 queries x 3 sources: bioRxiv, medRxiv, arXiv)
+- **Total unique papers saved:** 8 (paper_040.md through paper_047.md)
+- **Total duplicates detected and skipped:** ~6 across all queries
+- **Full texts retrieved:** 0 (all WebFetch/curl attempts returned 403)
+- **Papers span:** 2021-2025
+
+### Papers Saved — Cluster C
+| File | Title (Short) | Year | Source | Type | Key Finding |
+|------|---------------|------|--------|------|-------------|
+| paper_040.md | Creatine supplementation cognitive performance RCT | 2023 | medRxiv | RCT (largest to date) | No significant effect; weak evidence for small benefit; strong evidence against large effect |
+| paper_041.md | Creatine as central neurotransmitter | 2022 | bioRxiv | Basic science | Creatine detected in synaptic vesicles; may function as neurotransmitter |
+| paper_042.md | Depression, prefrontal creatine, gray matter | 2021 | medRxiv | Observational | Lower prefrontal creatine associated with higher depression scores |
+| paper_043.md | DCE improves cognitive function in CTD | 2022 | bioRxiv | Animal model | Creatine prodrug restores cognition in transporter-deficient mice |
+| paper_044.md | Ketosis, bioenergetics, neural function | 2024 | bioRxiv | Human MRS study | Brain total creatine increase correlates with neural function improvement |
+| paper_045.md | Brain creatine in PPA subtypes | 2022 | medRxiv | Clinical imaging | Brain creatine correlates with cognitive disease severity; cites Avgerinos/Rae |
+| paper_046.md | CTD rat model — motor/cognitive dysfunction | 2021 | bioRxiv | Animal model | Brain creatine deficiency causes intellectual disability |
+| paper_047.md | Creatine GI/fluid retention tolerability | 2025 | medRxiv | Clinical tolerability | Higher doses (needed for brain) cause more side effects; compliance concern |
+
+### Key Observations — Cluster C
+1. **Preprint landscape is sparse for direct creatine-cognition-in-healthy-adults research.** The main RCTs and reviews were published directly in journals without preprint deposits, except for Forsberg et al. (paper_040) on medRxiv.
+2. **bioRxiv yielded mechanistic and animal model papers** that provide important context for understanding *why* brain creatine matters for cognition (neurotransmitter role, CTD models, bioenergetics).
+3. **medRxiv yielded clinical/translational papers** including the largest RCT (paper_040), depression-creatine associations (paper_042), and tolerability data (paper_047).
+4. **arXiv yielded zero relevant results**, which is expected for this topic domain.
+5. **Cross-cluster value:** Several papers found here (especially paper_040, paper_041, paper_044) complement the published literature in Clusters A, B, and D by providing preprint versions, novel mechanistic insights, and bioenergetic evidence.

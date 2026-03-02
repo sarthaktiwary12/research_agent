@@ -1,7 +1,7 @@
 # The effects of creatine supplementation on cognitive performance — a randomised controlled study
 
 ## Metadata
-- **Authors:** Forsberg M, Classon E, Falkenberg T, Nyman E, Lundqvist D, et al.
+- **Authors:** Sandkühler JF, Kersting X, Faust A, Königs EK, Altman G, Ettinger U, Lux S, Philipsen A, Müller H, Brauner J
 - **Year:** 2023
 - **Source:** BMC Medicine
 - **URL:** https://link.springer.com/article/10.1186/s12916-023-03146-5
