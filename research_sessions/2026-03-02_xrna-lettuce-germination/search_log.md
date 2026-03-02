@@ -555,3 +555,161 @@ From C11 (tRF-G4 silencing):
 3. Nucleolin-mediated uptake of extracellular nucleic acids is well-established in animal systems but not characterized in plant seed coats
 4. Growth-defense tradeoff can be mitigated through temporal regulation and immunity priming — supports transient defense suppression during germination
 5. Exogenous RNA application is feasible and advancing rapidly but delivery to seeds remains a practical challenge
+
+---
+
+## Loop 2 Gap-Targeted Search: 2026-03-02
+
+### Overview
+- **Purpose:** Targeted searches to fill high-priority gaps identified in Loop 1 gap analysis (completeness score: 62%)
+- **Total queries executed:** 19 (of 19 planned; 2 required rephrasing due to API errors)
+- **New papers created:** 23 (paper_130 through paper_152)
+- **Gaps addressed:** H1, H2, H3, H4, M1
+
+---
+
+### Gap H1: PP2C47 Clade Identity in Lettuce
+
+#### Query 1: "Lactuca sativa protein phosphatase 2C clade classification phylogenetic"
+- **Results:** No lettuce-specific PP2C family study found. Found foundational Arabidopsis/rice classification (Xue et al. 2008) and sunflower (Asteraceae) PP2C study.
+- **Papers created:** paper_130 (Xue et al. 2008, BMC Genomics — PP2C classification in Arabidopsis/rice)
+- **Key finding:** PP2Cs classified into 13 subfamilies (A-K/L/M) in Arabidopsis with 80 members
+
+#### Query 2: "LOC111882210 Lactuca sativa PP2C gene family"
+- **Results:** No specific results for LOC111882210 gene ID. Confirmed lettuce genome v11 available at NCBI. No lettuce PP2C family study published.
+- **Papers created:** None (no new unique source)
+- **Key finding:** Lettuce genome (2.7 Gb, 9 chromosomes) fully assembled but PP2C family not characterized
+
+#### Query 3: "lettuce PP2C gene family genome-wide characterization"
+- **Results:** No lettuce PP2C study found. Found PP2C studies in sunflower, tomato, Medicago, cucumber, Brassica, oat.
+- **Papers created:** paper_131 (Sunflower PP2C, PLOS ONE 2024)
+- **Key finding:** Sunflower (same Asteraceae family) has 121 PP2C genes in 15 subgroups. Most relevant reference for lettuce.
+
+#### Query 4: "PP2C clade B clade E plant phosphatase classification SnRK2"
+- **Results:** Found key papers on PP2C-SnRK2 specificity. Clade A PP2Cs specifically inhibit SnRK2s; Clade B PP2Cs are MAPK phosphatases with limited SnRK2 interaction.
+- **Papers created:** paper_132 (Selective inhibition of Clade A PP2Cs by ABA receptors, Mol Plant 2012), paper_148 (Fuchs et al. 2013 review, FEBS Journal)
+- **Key finding:** PYR/PYL ABA receptors SELECTIVELY inhibit only Clade A PP2Cs. Clade B showed NO significant SnRK2 interaction.
+
+#### Query 5: "PP2C47 Arabidopsis clade identity nomenclature numbering"
+- **Results:** CRITICAL FINDING. In Medicago truncatula, MtPP2C47 is classified in **Clade B** (not Clade A). It is homologous to Arabidopsis AP2C1, a MAPK phosphatase.
+- **Papers created:** paper_133 (Medicago PP2C family, Scientific Reports 2018)
+- **Key finding:** PP2C47 = Clade B = MAPK phosphatase (NOT ABA signaling). If lettuce PP2C47 shares this classification, the PP2C47 paradox is RESOLVED.
+
+#### Supplemental: "sunflower Helianthus PP2C gene family clade classification Asteraceae"
+- **Results:** Confirmed sunflower PP2C study details; 121 genes in 15 subgroups with segmental duplication.
+- **Papers created:** (data incorporated into paper_131)
+
+**Gap H1 Status: SUBSTANTIALLY ADVANCED.** Strong evidence that PP2C47 is Clade B (MAPK phosphatase), not Clade A (ABA). Needs confirmation with lettuce-specific BLAST analysis.
+
+---
+
+### Gap H2: tRF Silencing Mechanism in Plant Systems
+
+#### Query 6: "tRNA fragment AGO1 mRNA cleavage mechanism plant Arabidopsis evidence"
+- **Results:** Multiple high-quality findings. The 5'-tsR-Ala/CYP71A13 pathway is the best-characterized plant tRF-AGO1 target. DCL1-dependent biogenesis in pollen. Cross-kingdom tRF silencing confirmed.
+- **Papers created:** paper_134 (Lalande et al. 2020, RNA Biology), paper_136 (composite tRF-AGO1 evidence)
+- **Key finding:** Gold-standard evidence for tRF-AGO1-mediated mRNA cleavage in Arabidopsis (5'RACE, STTM knockdown, ago1 mutant analysis)
+
+#### Query 7: "G-quadruplex tRNA fragment translation repression plant wheat germ"
+- **Results:** Found the definitive comparative study (Jackowiak et al. 2017). G4 topology NOT sufficient for translation repression in plant system. D-loop G residues (G18, G19) are important instead.
+- **Papers created:** paper_135 (Jackowiak et al. 2017, IJBCB)
+- **Key finding:** Plant tRF translation inhibition uses DIFFERENT structural determinants than mammalian G4-YB1-eIF4G pathway
+
+#### Query 8: "tRF gene silencing mechanism plant versus mammalian comparison"
+- **Results:** Comprehensive comparison of tRF mechanisms across kingdoms. Plants: AGO1-dependent cleavage, AGO-independent polysome-associated translation inhibition, AGO4-dependent chromatin modification. Mammals: AGO-dependent seed matching, G4-YB1 translation repression, stress granule formation.
+- **Papers created:** paper_151 (Loss-Morais et al. 2013, Biology Direct)
+- **Key finding:** Three distinct tRF mechanisms in plants; plants require near-perfect complementarity vs. seed matching in mammals
+
+#### Query 9: "small RNA seed germination imbibition gene silencing plant"
+- **Results:** Rich findings on small RNA dynamics during imbibition. 12 miRNA families downregulated, 4 upregulated. DCL1/HEN1 mutations cause ABA supersensitivity. miR390-TAS3-ARF module active in germination.
+- **Papers created:** paper_137 (Small RNA regulation of germination, Front Plant Sci 2015), paper_138 (Time to Wake Up, Plants MDPI 2021), paper_152 (miRNA-tasiRNA crosstalk, Sci Rep 2018)
+- **Key finding:** Small RNA regulatory machinery is fully active during seed imbibition; DCL1 directly connected to ABA sensitivity
+
+**Gap H2 Status: SUBSTANTIALLY RESOLVED.** The primary xRNA mechanism in plants is AGO1-mediated mRNA cleavage (not G4-dependent translation inhibition). Plant tRFs require near-perfect complementarity for target silencing.
+
+---
+
+### Gap H3: Under-Covered Targets (RGG, Pol I, Pol beta, CSLG)
+
+#### Query 10: "RGG motif RNA binding protein plant Arabidopsis development function"
+- **Results:** Identified the AtRGG protein family (AtRGGA, AtRGGB, AtRGGC). Cytoplasmic RNA-binding proteins. Temperature-sensitive flowering time regulators. Interact with ribosomal proteins and RNA processing factors.
+- **Papers created:** paper_139 (Cytosolic RGG proteins, Biol Chem 2023), paper_149 (AtRGGA stress tolerance, Plant Physiol 2015)
+- **Key finding:** AtRGGs are translation regulators enriched in ribosome-free fractions; temperature-sensitive; stress tolerance role for AtRGGA
+
+#### Query 11: "RNA polymerase I subunit plant ribosomal DNA transcription development"
+- **Results:** Comprehensive information on plant Pol I structure and function. Five RNA polymerases in plants (unique). Pol I transcribes 45S rDNA for ribosome biogenesis.
+- **Papers created:** paper_140 (DNA-dependent RNA polymerases in plants, Plant Cell 2023), paper_150 (Ribosome biogenesis review, Plant Cell 2019)
+- **Key finding:** Pol I subunit reduction would limit rRNA production and ribosome biogenesis during germination
+
+#### Query 12: "DNA polymerase beta plant chloroplast organelle genome repair"
+- **Results:** IMPORTANT CORRECTION: Plants do NOT use Pol beta in organelles. They use POL1A/POL1B (bacterial Pol I homologs) for chloroplast and mitochondrial genome replication/repair.
+- **Papers created:** paper_141 (Plant organelle DNA polymerases, Plants MDPI 2019 / Plant Physiol 2011)
+- **Key finding:** The "DNA Pol beta" target may be a misnomer. Plant organellar polymerases are Pol I-like with convergent 5'-dRP lyase activity.
+
+#### Query 13: "cellulose synthase-like G CSLG plant function characterized" (rephrased due to API error)
+- **Results:** BREAKTHROUGH FINDING: CSLG/CslM proteins are NOT cell wall enzymes — they are glucuronosyltransferases for triterpenoid saponin biosynthesis.
+- **Papers created:** paper_142 (CslG/CSyGT in saponin biosynthesis, Nature Chem Biol / Nature Comms 2020)
+- **Key finding:** CSLG3 should be reclassified from "cell wall" to "specialized metabolism / defense compound biosynthesis"
+
+**Gap H3 Status: SUBSTANTIALLY ADVANCED.** All four under-covered targets now have characterization. CSLG3 reclassified. Pol beta identity clarified. RGG family identified. Pol I role in ribosome biogenesis established.
+
+---
+
+### Gap M1: Lettuce-Specific Data During Germination
+
+#### Query 14: "Lactuca sativa seed germination transcriptome RNA-seq gene expression"
+- **Results:** Found lettuce germination RNA-seq study under water stress (QTL + transcriptome, 2024). 4,095 DEGs identified. SnRK2.3 identified as candidate gene.
+- **Papers created:** paper_143 (Lactuca spp. germination transcriptome, Sci Rep 2024)
+- **Key finding:** First lettuce-specific RNA-seq relevant to germination; raw data available (PRJEB71667)
+
+#### Query 15: "lettuce seed imbibition transcriptomic proteomic molecular profiling"
+- **Results:** Found the definitive lettuce germination proteomic study (Hao et al. 2015). 108 proteins differentially abundant. MVA pathway, methionine metabolism, defense proteins identified.
+- **Papers created:** paper_144 (Lettuce germination proteomics, Plant Physiology 2015)
+- **Key finding:** MVA pathway involvement in lettuce germination directly connects to beta-caryophyllene synthase and HMGR targets. Defense proteins most abundant category during imbibition.
+
+#### Query 16: "Lactuca sativa radicle emergence gene expression time course"
+- **Results:** Found data on specific lettuce germination genes: LsNCED4, LsGA3ox1, LsRbohC1, endo-beta-mannanase, LsXTH family.
+- **Papers created:** paper_145 (Composite lettuce germination gene studies)
+- **Key finding:** Standard sampling: 6, 12, 18, 24h imbibition. Radicle emergence at 18-24h. LsNCED4 and LsGA3ox1 are master regulators.
+
+#### Query 17: "lettuce seed priming molecular mechanisms RNA"
+- **Results:** Found RNA synthesis data in lettuce (higher rate in germinating vs. non-germinating after 12h). Stored mRNA translation dominates 0-12h; new transcription important after 12h.
+- **Papers created:** paper_146 (Seed priming molecular dynamics review, Plant Cell Environ 2023)
+- **Key finding:** xRNA timing window: 0-12h targets stored mRNAs; 12h+ targets new transcripts. RNA repair active during imbibition.
+
+**Gap M1 Status: SUBSTANTIALLY ADVANCED.** Lettuce-specific proteomic and transcriptomic data now available. MVA pathway connection established. Gene expression time course characterized.
+
+---
+
+### Gap H4: Plant Nucleolin Localization
+
+#### Query 18: "nucleolin cell surface plant root uptake extracellular" (API error; rephrased)
+- **Results:** API error on first attempt. Rephrased as "Arabidopsis nucleolin NUC-L1 outside nucleus cytoplasm localization evidence"
+- **Papers created:** (data incorporated into paper_147)
+- **Key finding:** Immunogold EM shows AtNUC-L1 is EXCLUSIVELY nuclear — NO cytoplasmic or cell-surface localization in plants
+
+#### Query 19: "plant nucleolin NUC1 NUC2 subcellular localization function"
+- **Results:** Comprehensive characterization of plant nucleolin. Two genes (NUC1, NUC2) with antagonistic functions. NUC1 essential for nucleolar organization and ribosome biogenesis. Double mutant lethal.
+- **Papers created:** paper_147 (Plant nucleolin NUC1/NUC2, multiple Pontvianne et al. studies)
+- **Key finding:** Plant nucleolin is exclusively nuclear (immunogold EM). This RESOLVES Contradiction 9 — nucleolin-mediated RNA uptake model does NOT apply to plants.
+
+**Gap H4 Status: RESOLVED.** Plant nucleolin is not on cell surface. Alternative xRNA uptake pathways must be invoked (passive imbibition, cell wall porosity, non-nucleolin endocytosis).
+
+---
+
+### Loop 2 Summary
+
+#### Papers Created: 23 (paper_130 through paper_152)
+#### Key Breakthroughs:
+1. **PP2C47 likely Clade B** (MAPK phosphatase, not ABA signaling) — near-resolution of Contradiction 1
+2. **Plant tRF mechanism is AGO1-mediated mRNA cleavage** (not G4 translation inhibition) — resolves Gap H2
+3. **CSLG3 is a saponin biosynthesis enzyme** (not cell wall) — reclassifies target
+4. **Plant nucleolin is exclusively nuclear** — resolves Contradiction 9
+5. **Lettuce germination proteomics** links MVA pathway to germination/thermoinhibition
+
+#### Remaining Gaps:
+- Lettuce-specific PP2C47 BLAST analysis still needed for definitive clade assignment
+- No lettuce normal germination time-course transcriptome (only stress and proteomic data)
+- xRNA uptake mechanism in plant seeds still unresolved
+- Individual target gene expression levels in lettuce during germination still unknown
+- Validation experimental designs not yet addressed (RQ8)
