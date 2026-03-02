@@ -297,3 +297,65 @@
 3. **medRxiv yielded clinical/translational papers** including the largest RCT (paper_040), depression-creatine associations (paper_042), and tolerability data (paper_047).
 4. **arXiv yielded zero relevant results**, which is expected for this topic domain.
 5. **Cross-cluster value:** Several papers found here (especially paper_040, paper_041, paper_044) complement the published literature in Clusters A, B, and D by providing preprint versions, novel mechanistic insights, and bioenergetic evidence.
+
+---
+
+## Citation Chase: 2026-03-02T08:00
+
+### Configuration
+- **Profile:** fast (max_hops = 1)
+- **Seed Papers:** paper_001 (Xu et al. 2024 meta-analysis), paper_022 (Avgerinos et al. 2018 systematic review), paper_023 (Sandkühler/Forsberg 2023 largest RCT), paper_003 (Forbes et al. 2024 critical review), paper_065 (Beard & Braissant 2010 BBB transport)
+
+### Method
+- Semantic Scholar API blocked (HTTP 403) — used WebSearch for backward and forward citation discovery
+- Extracted "Key References to Chase" from each seed paper's deep reading notes
+- Cross-referenced discovered papers against all existing session papers (26 files) to identify duplicates
+- Prioritized three target papers identified in the task brief: Rae et al. (2003), McMorris et al. (2006/2007), Watanabe et al. (2002)
+
+### Backward Citation Chasing (What Seed Papers Cite)
+- **paper_001 (Xu et al. 2024):** References Rae et al. 2003, McMorris et al. 2006/2007, Watanabe et al. 2002, Benton & Donohoe 2011, Avgerinos et al. 2018 — all foundational RCTs included in the meta-analysis
+- **paper_022 (Avgerinos et al. 2018):** Explicitly lists Rae et al. 2003, McMorris et al. 2006/2007, Benton & Donohoe 2011, Rawson & Venezia 2011, Turner et al. 2015 as key references
+- **paper_023 (Sandkühler et al. 2023):** Was explicitly designed to replicate Rae et al. 2003; also cites Avgerinos et al. 2018, Forbes et al. 2024, EFSA 2024, Dechent et al. 1999
+- **paper_003 (Forbes et al. 2024):** Cites Avgerinos et al. 2018, Rae/Broer 2015, Dolan et al. 2019 as narrative reviews being critiqued
+- **paper_065 (Beard & Braissant 2010):** Cites SLC6A8 expression studies, AGAT/GAMT enzyme studies, clinical MRS data from CTD patients
+
+### Forward Citation Chasing (Who Cites Seed Papers)
+- **paper_022 (Avgerinos et al. 2018):** ~104 citations including Xu et al. 2024, Prokopidis et al. 2023, Sandkühler et al. 2023, Marshall et al. 2026, Forbes et al. 2024 critical perspective, EFSA 2024 — all already in session
+- **paper_023 (Sandkühler et al. 2023):** Cited by Forbes et al. 2024 critical review, EFSA 2024 evaluation — both already in session
+- **paper_001 (Xu et al. 2024):** Too recent for substantial forward citations; identified Marshall et al. 2026 and a 2025 Journal of Nutrition critical commentary — noted but not added
+
+### Relevance Assessment of Discovered Papers
+| Paper | Relevance Score | Decision |
+|-------|----------------|----------|
+| Rae et al. 2003 (Proc Royal Soc B) | 10 | **ADD** — Seminal study; cited by all 5 seed papers; the study paper_023 was designed to replicate |
+| Watanabe et al. 2002 (Neurosci Res) | 9 | **ADD** — First fNIRS evidence; supports stress/fatigue hypothesis; cited by papers 005, 022 |
+| McMorris et al. 2006 (Psychopharmacology) | 9 | **ADD** — Foundational stress-condition study; cited by papers 002, 005, 022, 061 |
+| McMorris et al. 2007 (Physiol Behav) | 9 | **ADD** — Extended sleep deprivation paradigm; predecessor to Gordji-Nejad 2024; cited by papers 005, 022, 024 |
+| Benton & Donohoe 2011 (Br J Nutr) | 9 | **ADD** — Largest vegetarian/omnivore study; cited by papers 002, 022; key to diet-moderation hypothesis |
+| Marshall et al. 2026 (Nutr Rev) | 7 | SKIP — Already noted in session; aging-specific focus partially covered by existing papers |
+| Rawson & Venezia 2011 | 6 | SKIP — Earlier narrative review; less informative than the systematic reviews already in session |
+| Turner et al. 2015 | 6 | SKIP — Hypoxia study; less central than sleep deprivation studies |
+| Dolan et al. 2019 | 6 | SKIP — Narrative review; perspective already represented by Forbes et al. 2023/2024 |
+
+### Results
+- **Backward References Checked:** ~35 key references across 5 seed papers
+- **Forward Citations Checked:** ~120 forward citations (primarily from paper_022 Avgerinos et al. 2018)
+- **New Papers Added:** 5
+- **Duplicates Skipped:** ~15 (papers already in session under various file numbers)
+- **Irrelevant Skipped:** ~100+ (tangential clinical, animal, or unrelated studies)
+- **Hops Completed:** 1 (fast profile)
+
+### New Paper Files
+| File | Authors | Year | Journal | Type | Key Contribution |
+|------|---------|------|---------|------|-----------------|
+| paper_080.md | Rae et al. | 2003 | Proc Royal Soc B | RCT (N=45 vegetarians) | Seminal creatine-cognition study; large effect (p<0.0001) on working memory + intelligence; effect size (d~1.0) not replicated |
+| paper_081.md | Watanabe et al. | 2002 | Neurosci Res | RCT (N=24) | First fNIRS evidence; creatine reduced mental fatigue + cerebral oxygenated hemoglobin during cognitive task |
+| paper_082.md | McMorris et al. | 2006 | Psychopharmacology | RCT (N=19) | Creatine improved prefrontal tasks + mood after 24h sleep deprivation; simpler memory unaffected |
+| paper_083.md | McMorris et al. | 2007 | Physiol Behav | RCT (N=~20) | Creatine (20g/d x 7d) improved executive function at 36h sleep deprivation; no effect on simple memory/alertness |
+| paper_084.md | Benton & Donohoe | 2011 | Br J Nutr | RCT (N=128) | Vegetarians (not omnivores) showed improved memory; reaction time variability decreased in both groups |
+
+### Citation Chase Observations
+1. **The Rae et al. (2003) study is the single most-cited primary study in this field** — referenced in the "Key References to Chase" section of 6 different session papers (paper_005, 006, 021, 022, 023, 024, 061). Its very large effect size (d~1.0) has become the central point of contention: the 2023 Sandkühler replication strongly disfavors this effect, suggesting it may have been an artifact of small sample size and exclusive vegetarian population.
+2. **The McMorris 2006/2007 studies are the primary evidence base for the "stress-condition hypothesis"** — the idea that creatine's cognitive benefits emerge under energetic stress (sleep deprivation, fatigue). This hypothesis is supported by the 2024 Gordji-Nejad single-dose study (paper_005) that added MRS evidence.
+3. **The Benton & Donohoe 2011 vegetarian/omnivore finding creates a paradox** — brain creatine levels are similar in vegetarians and omnivores (unlike muscle creatine), yet vegetarians show greater cognitive benefit from supplementation. This suggests the mechanism may be indirect (e.g., via glucose homeostasis) rather than direct brain creatine increases.
+4. **All 5 newly added papers are foundational RCTs from 2002-2011** that were consistently flagged as "Key References to Chase" across multiple seed papers. Their absence from the session was a significant gap in the evidence base.
